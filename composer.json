@@ -1,0 +1,46 @@
+{
+    "name": "swidev/backpack-std",
+    "description": "Basic framework PHP 8.5",
+    "authors": [
+      {
+        "name": "Broxin",
+        "email": "wardenbyte@gmail.com"
+      }
+    ],
+
+    "autoload": {
+      "classmap": [
+        "app/AppKernel.php"
+      ],
+      "files": [
+        "src/swidev/system/util.php"
+      ],
+      "psr-4": {
+        "Swidev\\System\\": "src/swidev/system/"
+      }
+    },
+
+    "require": {
+        "php": ">=8.5",
+        "ext-pdo": "*",
+        "psr/container": "^2.0",
+        "psr/log": "^3.0",
+        "symfony/http-foundation": "^8.0",
+        "symfony/yaml": "^8.0",
+        "symfony/var-dumper": "^8.0",
+        "tracy/tracy": "^2.12"
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+          "Swidev\\Tests\\": "tests/"
+        }
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "^13.1"
+    },
+
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
