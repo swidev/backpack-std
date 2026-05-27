@@ -37,7 +37,7 @@
 
     "autoload-dev": {
         "psr-4": {
-          "Swidev\\Tests\\": "tests/"
+          "Tests\\Swidev\\System\\": "tests/swidev-system/"
         }
     },
 
