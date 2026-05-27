@@ -1,4 +1,5 @@
 /.idea/
 /vendor/
+*-dist
 composer.lock
 composer.phar
