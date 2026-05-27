@@ -13,9 +13,10 @@
         "app/AppKernel.php"
       ],
       "files": [
-        "src/swidev/system/util.php"
+        "src/swidev/system/utils.php"
       ],
       "psr-4": {
+        "": "src/",
         "Swidev\\System\\": "src/swidev/system/"
       }
     },
@@ -23,12 +24,15 @@
     "require": {
         "php": ">=8.5",
         "ext-pdo": "*",
+        "doctrine/orm": "*",
         "psr/container": "^2.0",
         "psr/log": "^3.0",
         "symfony/http-foundation": "^8.0",
+        "symfony/routing": "^8.0",
         "symfony/yaml": "^8.0",
         "symfony/var-dumper": "^8.0",
-        "tracy/tracy": "^2.12"
+        "tracy/tracy": "^2.12",
+        "twig/twig": "^v4.0.0"
     },
 
     "autoload-dev": {
